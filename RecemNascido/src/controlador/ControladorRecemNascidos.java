@@ -34,6 +34,7 @@ public class ControladorRecemNascidos {
         objeto.setNome_da_mae(man.jtfNomedamae.getText());
         objeto.setNumero_do_quarto(Integer.parseInt(man.jtfNumerodoquarto.getText()));
         objeto.setPeso(Double.parseDouble(man.jtfPeso.getText()));
+        objeto.setSexo((String) man.jtfSexo.getSelectedItem());
         
         boolean resultado = DaoRecemNascido.alterar(objeto);
         if (resultado) {
